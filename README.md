@@ -13,12 +13,12 @@ A swift file provides custom swipe table view cell.
 4. Add UI components to cellContainerView.
 5. Implement THSwipeCellDelegate protocol and confirm the protocol for the custom cell on cellForRowAtIndex method.
 
-# Optional for tap to open buttons
+### Optional for tap to open buttons
 
 5. Use THSwipeCellTable as your table.
 6. Implement didSelectRowAtIndexPath delegate method and call respective method of THSwipeCellTable.
 
-# Optional for disable the multi selection cell
+### Optional for disable the multi selection cell
 
 7. Implement scrollViewWillBeginDragging, scrollViewDidScroll and scrollViewDidEndDragging Delegate methods of UIScrollView and call the respective methods in THSwipeCellTable.
 8. Call didOpenCell method of THSwipeCellTable inside the didOpenSwipeCell of THSwipeCellDelegate.
