@@ -123,17 +123,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // MARK: TableView Delegate Methods
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var swipeCell = tableView .cellForRowAtIndexPath(indexPath) as? DemoSwipeCell
-        if swipeCell != nil {
-            if swipeCell!.tapToOpen {
-                if swipeCell!.cellOpened {
-                    swipeCell!.resetConstraintContstantsToZeroWithAnimation(true, notifyDelegateDidClose: true)
-                } else {
-                    swipeCell!.setConstraintsToShowAllButtonsWithAnimation(true, notifyDelegateDidOpen: true)
-                }
-            }
-        }
-        
+        swipeCellTable.tableView(tableView, didSelectRowAtIndexPath: indexPath)
     }
     
     // MARK: THSwipeCellDelegate Methods

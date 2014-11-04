@@ -316,4 +316,19 @@ class THSwipeCellTable: UITableView {
             openedCell = swipeCell
         }
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var swipeCell = tableView .cellForRowAtIndexPath(indexPath) as? THSwipeCell
+        if swipeCell != nil {
+            if swipeCell!.tapToOpen {
+                if swipeCell!.cellOpened {
+                    swipeCell!.resetConstraintContstantsToZeroWithAnimation(true, notifyDelegateDidClose: true)
+                } else {
+                    swipeCell!.setConstraintsToShowAllButtonsWithAnimation(true, notifyDelegateDidOpen: true)
+                }
+            }
+        }
+    }
+    
+    
 }
