@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  THSwipeCell
 //
-//  Created by Loganathan on 03/11/14.
+//  Created by Torry Harris on 03/11/14.
 //  Copyright (c) 2014 Torry Harris Business Soutions Pvt. Ltd. All rights reserved.
 //
 
